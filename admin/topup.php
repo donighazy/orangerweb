@@ -30,10 +30,10 @@
           </div>
           <div class="box-body">
             <form action="topup_act.php" method="post" enctype="multipart/form-data">
-			  <input type="hidden" name="idloket" value="<?php echo $id ?>">
+			  <input type="hidden" name="idloket" value="<?php return $id ?>">
               <div class="form-group">
                 <label>Saldo Saat ini : </label>
-                <input type="text" class="form-control" name="saldo" value="<?php echo 'Rp '.number_format($saldo,0,',','.') ?>" readonly>
+                <input type="text" class="form-control" name="saldo" value="<?php return 'Rp '.number_format($saldo,0,',','.') ?>" readonly>
               </div>
               <div class="form-group">
                 <label>Jumlah Top Up</label>
