@@ -29,7 +29,7 @@
     }
 
 .iradio_futurico {
-    background-position: -72px 0;
+  background-position: -72px 0;
 }
   .iradio_futurico.checked {
         background-position: -90px 0;
@@ -39,7 +39,7 @@
         cursor: default;
     }
   .iradio_futurico.checked.disabled {
-        background-position: -126px 0;
+  background-position: -126px 0;
     }
 
 /* Retina support */
