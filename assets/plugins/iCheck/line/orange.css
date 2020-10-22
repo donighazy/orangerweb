@@ -9,7 +9,7 @@
     font-size: 13px;
     line-height: 17px;
     color: #fff;
-    background: #f70;
+  background: #f70;
     border: none;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -19,7 +19,7 @@
     .icheckbox_line-orange .icheck_line-icon,
     .iradio_line-orange .icheck_line-icon {
         position: absolute;
-        top: 50%;
+  top: 50%;
         left: 13px;
         width: 13px;
         height: 11px;
@@ -55,7 +55,7 @@
     .iradio_line-orange.checked.disabled {
         background: #FFD6B3;
     }
-        .icheckbox_line-orange.checked.disabled .icheck_line-icon,
+  .icheckbox_line-orange.checked.disabled .icheck_line-icon,
         .iradio_line-orange.checked.disabled .icheck_line-icon {
             background-position: -45px 0;
         }
