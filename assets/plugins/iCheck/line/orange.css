@@ -31,8 +31,8 @@
     }
     .icheckbox_line-orange.hover,
     .icheckbox_line-orange.checked.hover,
-    .iradio_line-orange.hover {
-        background: #FF9233;
+  .iradio_line-orange.hover {
+  background: #FF9233;
     }
     .icheckbox_line-orange.checked,
     .iradio_line-orange.checked {
@@ -44,7 +44,7 @@
         }
     .icheckbox_line-orange.disabled,
     .iradio_line-orange.disabled {
-        background: #FFD6B3;
+  background: #FFD6B3;
         cursor: default;
     }
         .icheckbox_line-orange.disabled .icheck_line-icon,
