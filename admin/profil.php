@@ -27,9 +27,9 @@
 		    
 			if(isset($_GET['alert'])){
 			  if($_GET['alert'] == "gagal"){
-				echo "<div class='alert alert-danger'>PIN SUDAH DIGUNAKAN ...!</div>";
+				return "<div class='alert alert-danger'>PIN SUDAH DIGUNAKAN ...!</div>";
 			  }else if($_GET['alert'] == "ok"){
-				echo "<div class='alert alert-success'>PERUBAHAN PROFIL BERHASIL</div>";
+				return "<div class='alert alert-success'>PERUBAHAN PROFIL BERHASIL</div>";
 			  }	
 			}
 			?>
@@ -40,37 +40,37 @@
           </div>
           <div class="box-body">
             <form action="profil_act.php" method="post" enctype="multipart/form-data">
-			  <input type="hidden" name="idloket" value="<?php echo $id ?>">
+			  <input type="hidden" name="idloket" value="<?php return $id ?>">
               
               <div class="form-group">
                 <label>User ID</label>
-                <input type="number" class="form-control" name="userid" required="required" value="<?php echo $data['id']?>" readonly>
+                <input type="number" class="form-control" name="userid" required="required" value="<?php return $data['id']?>" readonly>
               </div>
 			  
 			  <div class="form-group">
                 <label>Nama Lengkap</label>
-                <input type="text" class="form-control" name="nama" required="required" value="<?php echo $data['nama']?>">
+                <input type="text" class="form-control" name="nama" required="required" value="<?php return $data['nama']?>">
               </div>
 			  
 			  <div class="form-group">
                 <label>Nomor Handphone</label>
-                <input type="text" class="form-control" name="nohp" required="required" value="<?php echo $data['nohp']?>">
+                <input type="text" class="form-control" name="nohp" required="required" value="<?php return $data['nohp']?>">
               </div>
 			  <div class="form-group">
                 <label>Email</label>
-                <input type="text" class="form-control" name="email" required="required" value="<?php echo $data['email']?>">
+                <input type="text" class="form-control" name="email" required="required" value="<?php return $data['email']?>">
               </div>
 			  <div class="form-group">
                 <label>KPRK</label>
-                <input type="text" class="form-control" name="kprk" required="required" value="<?php echo $data['kprk']?>" readonly>
+                <input type="text" class="form-control" name="kprk" required="required" value="<?php return $data['kprk']?>" readonly>
               </div>
 			  <div class="form-group">
                 <label>No. Rekening GIROPOS</label>
-                <input type="text" class="form-control" name="norek" required="required" value="<?php echo $data['norek']?>">
+                <input type="text" class="form-control" name="norek" required="required" value="<?php return $data['norek']?>">
               </div>
 			  <div class="form-group">
                 <label>PIN Login</label>
-                <input type="text" class="form-control" name="pin" required="required" value="<?php echo $data['pin']?>" readonly>
+                <input type="text" class="form-control" name="pin" required="required" value="<?php return $data['pin']?>" readonly>
               </div>
 			 
 			  
