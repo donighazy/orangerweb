@@ -28,7 +28,7 @@
         overflow: hidden;
         background: url(line.png) no-repeat;
         border: none;
-  }
+}
     .icheckbox_line-aero.hover,
     .icheckbox_line-aero.checked.hover,
     .iradio_line-aero.hover {
