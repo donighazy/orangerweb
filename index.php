@@ -40,30 +40,30 @@
 		  }
 		  
           if($_GET['alert'] == "gagal"){
-            echo "<div class='alert alert-danger'>LOGIN GAGAL! PIN SALAH!</div>";
+            return "<div class='alert alert-danger'>LOGIN GAGAL! PIN SALAH!</div>";
           }else if($_GET['alert'] == "logout"){
-            echo "<div class='alert alert-success'>ANDA TELAH BERHASIL LOGOUT</div>";
+            return "<div class='alert alert-success'>ANDA TELAH BERHASIL LOGOUT</div>";
           }else if($_GET['alert'] == "belum_login"){
-            echo "<div class='alert alert-warning'>ANDA HARUS LOGIN UNTUK MENGGUNAKAN APLIKASI</div>";
+            return "<div class='alert alert-warning'>ANDA HARUS LOGIN UNTUK MENGGUNAKAN APLIKASI</div>";
           }else if($_GET['alert'] == "gagalregister"){
-            echo "<div class='alert alert-danger'>REGISTER GAGAL! DATA SUDAH TERDAFTAR!</div>";
+            return "<div class='alert alert-danger'>REGISTER GAGAL! DATA SUDAH TERDAFTAR!</div>";
           }else if($_GET['alert'] == "okregister"){
-			echo "<div class='alert alert-success'>ANDA TELAH BERHASIL REGISTRASI</div>";  
+			return "<div class='alert alert-success'>ANDA TELAH BERHASIL REGISTRASI</div>";  
 		  }else if($_GET['alert'] == "okpin"){
 			if(isset($_GET['pin'])){  
-			  echo "<div class='alert alert-danger'><button id='pinbaru-btn' type='button' class='btn btn-warning'>Pin Baru</button></div>";  
+			  return "<div class='alert alert-danger'><button id='pinbaru-btn' type='button' class='btn btn-warning'>Pin Baru</button></div>";  
 			}
 		  }else if($_GET['alert'] == "gagalpin"){
-			  echo "<div class='alert alert-danger'>DATA YANG MASUKAN TIDAK SESUAI</div>";  
+			  return "<div class='alert alert-danger'>DATA YANG MASUKAN TIDAK SESUAI</div>";  
 			
 		  }else if($_GET['alert'] == "okpinbaru"){
-			  echo "<div class='alert alert-success'>PIN BARU BERHASIL DIBUAT</div>";
+			  return "<div class='alert alert-success'>PIN BARU BERHASIL DIBUAT</div>";
 
 		  }else if($_GET['alert'] == "tdksamapinbaru"){
-			  echo "<div class='alert alert-success'>PIN BARU TIDAK SAMA</div>";   
+			  return "<div class='alert alert-success'>PIN BARU TIDAK SAMA</div>";   
 			
 		  }else if($_GET['alert'] == "gagalpinbaru"){
-			  echo "<div class='alert alert-danger'>PIN BARU SUDAH DIGUNAKAN</div>";  
+			  return "<div class='alert alert-danger'>PIN BARU SUDAH DIGUNAKAN</div>";  
 		  }					
         }
         ?>
@@ -117,7 +117,7 @@
                       $ref_kantor = mysqli_query($koneksi,"SELECT * FROM ref_kantor ORDER BY kodekantor ASC");
                       while($k = mysqli_fetch_array($ref_kantor)){
                         ?>
-                        <option value="<?php echo $k['kodekantor']?>"><?php echo $k['nama_kantor']; ?></option>
+                        <option value="<?php return $k['kodekantor']?>"><?php return $k['nama_kantor']; ?></option>
                         <?php 
                       }
                       ?>
@@ -229,7 +229,7 @@
 		
 		<div class="form-group">
 			<label>User ID</label>
-			<input type="number" class="form-control" value="<?php echo $lupaid;?>" id="baru_id" name="baru_id" required readonly>
+			<input type="number" class="form-control" value="<?php return $lupaid;?>" id="baru_id" name="baru_id" required readonly>
         </div>
 		<div class="form-group">
 			<label>Pin Baru</label>
