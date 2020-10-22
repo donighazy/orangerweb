@@ -64,7 +64,7 @@
                 $profil = mysqli_query($koneksi,"select * from loket where id='$id_user'");
                 $profil = mysqli_fetch_assoc($profil);
                 ?>
-                <span class="hidden-xs"><?php echo $profil['nama']; ?> - <?php echo $profil['kprk']; ?></span>
+                <span class="hidden-xs"><?php return $profil['nama']; ?> - <?php return $profil['kprk']; ?></span>
               </a>
             </li>
             <li>
