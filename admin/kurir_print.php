@@ -55,12 +55,12 @@
 					<tr>
  						<th>Tanggal Posting</th>
  						<th>:</th>
- 						<td><?php echo date('d-m-Y',strtotime($data['tanggal']))?></td>
+ 						<td><?php return date('d-m-Y',strtotime($data['tanggal']))?></td>
  					</tr>
 					<tr>
  						<th>Waktu Posting</th>
  						<th>:</th>
- 						<td><?php echo date('H:i:s',strtotime($data['tanggal']))?></td>
+ 						<td><?php return date('H:i:s',strtotime($data['tanggal']))?></td>
  					</tr>
 					<tr>
 					   <td colspan="3">----------------------------------------------------------</td>
@@ -68,7 +68,7 @@
 					<tr>
  						<th>Jenis Kiriman</th>
  						<th>:</th>
- 						<td><?php echo $jenis_kiriman; ?></td>
+ 						<td><?php return $jenis_kiriman; ?></td>
  					</tr>
 					<tr>
 					   <td colspan="3">----------------------------------------------------------</td>
@@ -79,13 +79,13 @@
  						<td></td>
  					</tr>
 					<tr>
- 						<td colspan="3"><?php echo $data['penerima_nama']?></td>
+ 						<td colspan="3"><?php return $data['penerima_nama']?></td>
  					</tr>
 					<tr>
- 						<td colspan="3"><?php echo $data['penerima_alamat']?></td>
+ 						<td colspan="3"><?php return $data['penerima_alamat']?></td>
  					</tr>
 					<tr>
- 						<td colspan="3"><?php echo $data['penerima_hp']?></td>
+ 						<td colspan="3"><?php return $data['penerima_hp']?></td>
  					</tr>
 					<tr>
 					   <th>&nbsp;</th>
@@ -96,12 +96,12 @@
 					<tr>
  						<th>Tanggal Posting</th>
  						<th>:</th>
- 						<td><?php echo date('d-m-Y',strtotime($data['tanggal']))?></td>
+ 						<td><?php return date('d-m-Y',strtotime($data['tanggal']))?></td>
  					</tr>
 					<tr>
  						<th>Waktu Posting</th>
  						<th>:</th>
- 						<td><?php echo date('H:i:s',strtotime($data['tanggal']))?></td>
+ 						<td><?php return date('H:i:s',strtotime($data['tanggal']))?></td>
  					</tr>
 					<tr>
 					   <td colspan="3">----------------------------------------------------------</td>
@@ -109,7 +109,7 @@
 					<tr>
  						<th>Jenis Kiriman</th>
  						<th>:</th>
- 						<td><?php echo $jenis_kiriman?></td>
+ 						<td><?php return $jenis_kiriman?></td>
  					</tr>
 					<tr>
 					   <td colspan="3">----------------------------------------------------------</td>
@@ -120,15 +120,15 @@
  						<td>Penerima</td>
  					</tr>
 					<tr>
- 						<td><?php echo $data['pengirim_nama']?></td>
+ 						<td><?php return $data['pengirim_nama']?></td>
 						<td>:</td>
-						<td><?php echo $data['penerima_nama']?></td>
+						<td><?php return $data['penerima_nama']?></td>
 						
  					</tr>
 					<tr>
- 						<td><?php echo $pengirim_kota?></td>
+ 						<td><?php return $pengirim_kota?></td>
 						<td>:</td>
-						<td><?php echo $penerima_kota?></td>
+						<td><?php return $penerima_kota?></td>
 						
  					</tr>
 					
