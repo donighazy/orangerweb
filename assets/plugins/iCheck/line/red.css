@@ -31,7 +31,7 @@
     }
     .icheckbox_line-red.hover,
     .icheckbox_line-red.checked.hover,
-    .iradio_line-red.hover {
+  .iradio_line-red.hover {
         background: #E98582;
     }
     .icheckbox_line-red.checked,
