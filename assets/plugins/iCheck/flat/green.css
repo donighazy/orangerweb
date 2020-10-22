@@ -3,7 +3,7 @@
 .icheckbox_flat-green,
 .iradio_flat-green {
     display: inline-block;
-    *display: inline;
+  *display: inline;
     vertical-align: middle;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
 .icheckbox_flat-green {
   background-position: 0 0;
 }
-    .icheckbox_flat-green.checked {
+  .icheckbox_flat-green.checked {
         background-position: -22px 0;
     }
     .icheckbox_flat-green.disabled {
