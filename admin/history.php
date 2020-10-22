@@ -37,11 +37,11 @@
           </div>
           <div class="box-body">
             <form action="history.php" method="post" enctype="multipart/form-data">
-			  <input type="hidden" name="idloket" value="<?php echo $id ?>">
+			  <input type="hidden" name="idloket" value="<?php return $id ?>">
               
               <div class="form-group">
                 <label>Tanggal</label>
-                <input type="date" class="form-control" name="tanggal" value="<?php echo date('Y-m-d', strtotime($tanggal));?>" required="required">
+                <input type="date" class="form-control" name="tanggal" value="<?php return date('Y-m-d', strtotime($tanggal));?>" required="required">
               </div>
               
               <div class="form-group">
@@ -78,9 +78,9 @@
 					   ?>
 				         <tr>
 						   <td>
-						      <p><strong><font color="blue"><?php echo $data['tanggal'];?></font><strong></p>
-							  <p><?php echo $data['noref'];?></p>
-							  <p><?php echo $data['ket'];?></p>
+						      <p><strong><font color="blue"><?php return $data['tanggal'];?></font><strong></p>
+							  <p><?php return $data['noref'];?></p>
+							  <p><?php return $data['ket'];?></p>
 						   </td>
                          </tr>						 
 					   <?php
