@@ -20,7 +20,7 @@
     .iradio_line-red .icheck_line-icon {
   position: absolute;
         top: 50%;
-        left: 13px;
+  left: 13px;
         width: 13px;
         height: 11px;
         margin: -5px 0 0 0;
@@ -32,7 +32,7 @@
     .icheckbox_line-red.hover,
     .icheckbox_line-red.checked.hover,
   .iradio_line-red.hover {
-        background: #E98582;
+  background: #E98582;
     }
     .icheckbox_line-red.checked,
     .iradio_line-red.checked {
