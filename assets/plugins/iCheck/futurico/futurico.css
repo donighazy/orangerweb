@@ -19,7 +19,7 @@
 }
   .icheckbox_futurico.checked {
   background-position: -18px 0;
-    }
+}
   .icheckbox_futurico.disabled {
   background-position: -36px 0;
   cursor: default;
@@ -44,13 +44,13 @@
 
 /* Retina support */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (-moz-min-device-pixel-ratio: 1.5),
-       only screen and (-o-min-device-pixel-ratio: 3/2),
-       only screen and (min-device-pixel-ratio: 1.5) {
+  only screen and (-moz-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-device-pixel-ratio: 1.5) {
     .icheckbox_futurico,
     .iradio_futurico {
         background-image: url(futurico@2x.png);
         -webkit-background-size: 144px 19px;
-        background-size: 144px 19px;
+    background-size: 144px 19px;
     }
 }
