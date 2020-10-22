@@ -8,7 +8,7 @@
     padding: 5px 15px 5px 38px;
   font-size: 13px;
   line-height: 17px;
-    color: #fff;
+  color: #fff;
   background: #f70;
   border: none;
   -webkit-border-radius: 3px;
@@ -33,8 +33,8 @@
   .icheckbox_line-orange.checked.hover,
   .iradio_line-orange.hover {
   background: #FF9233;
-    }
-  .icheckbox_line-orange.checked,
+}
+.icheckbox_line-orange.checked,
   .iradio_line-orange.checked {
   background: #f70;
     }
