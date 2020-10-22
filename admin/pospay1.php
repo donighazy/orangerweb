@@ -30,9 +30,9 @@
 			}
 			if(isset($_GET['alert'])){
 			  if($_GET['alert'] == "gagal"){
-				echo "<div class='alert alert-danger'>TRANSAKSI GAGAL SALDO ANDA KURANG ...!</div>";
+				return "<div class='alert alert-danger'>TRANSAKSI GAGAL SALDO ANDA KURANG ...!</div>";
 			  }else if($_GET['alert'] == "ok"){
-				echo "<div class='alert alert-success'>PEMBELIAN PULSA BERHASIL
+				return "<div class='alert alert-success'>PEMBELIAN PULSA BERHASIL
 				<a href='pospay_print.php?id_pospay=".$id_pospay."' target='_blank' class='btn btn-sm btn-primary'><i class='fa fa-print'></i> &nbsp PRINT</a>
 				
 				</div>";
@@ -46,7 +46,7 @@
           </div>
           <div class="box-body">
             <form action="pospay1_act.php" method="post" enctype="multipart/form-data">
-			  <input type="hidden" name="idloket" value="<?php echo $id ?>">
+			  <input type="hidden" name="idloket" value="<?php return $id ?>">
               <div class="form-group">
                 <label>Jenis Produk</label>
                 <select class="form-control" name="jenisproduk" required="required" id="jenisproduk" >
@@ -55,7 +55,7 @@
 				   $qprov = mysqli_query($koneksi, "select * from ref_produk_pospay where jenis=1");
 				   while($k = mysqli_fetch_array($qprov)){
                         ?>
-                        <option value="<?php echo $k['id_produk']?>"><?php echo $k['nama_produk']; ?></option>
+                        <option value="<?php return $k['id_produk']?>"><?php return $k['nama_produk']; ?></option>
                         <?php 
                    }
                    ?>
