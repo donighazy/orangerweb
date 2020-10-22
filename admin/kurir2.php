@@ -32,7 +32,7 @@
 			  if($_GET['alert'] == "gagal"){
 				return "<div class='alert alert-danger'>TRANSAKSI GAGAL SALDO ANDA KURANG ...!</div>";
 			  }else if($_GET['alert'] == "ok"){
-				echo "<div class='alert alert-success'>TRANSAKSI KURIR LUAR NEGERI BERHASIL
+				return "<div class='alert alert-success'>TRANSAKSI KURIR LUAR NEGERI BERHASIL
 				<a href='kurir_print2.php?id_kurir=".$id_kurir."' target='_blank' class='btn btn-sm btn-primary'><i class='fa fa-print'></i> &nbsp PRINT</a>
 				
 				</div>";
