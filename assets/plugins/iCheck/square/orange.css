@@ -34,10 +34,10 @@
 .iradio_square-orange {
   background-position: -120px 0;
 }
-  .iradio_square-orange.hover {
+.iradio_square-orange.hover {
   background-position: -144px 0;
     }
-  .iradio_square-orange.checked {
+.iradio_square-orange.checked {
   background-position: -168px 0;
     }
   .iradio_square-orange.disabled {
@@ -55,8 +55,8 @@
   only screen and (min-device-pixel-ratio: 1.5) {
   .icheckbox_square-orange,
   .iradio_square-orange {
-  background-image: url(orange@2x.png);
-  -webkit-background-size: 240px 24px;
-  background-size: 240px 24px;
+    background-image: url(orange@2x.png);
+    -webkit-background-size: 240px 24px;
+    background-size: 240px 24px;
     }
 }
