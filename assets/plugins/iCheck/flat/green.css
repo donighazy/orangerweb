@@ -15,7 +15,7 @@
 }
 
 .icheckbox_flat-green {
-    background-position: 0 0;
+  background-position: 0 0;
 }
     .icheckbox_flat-green.checked {
         background-position: -22px 0;
@@ -39,7 +39,7 @@
         cursor: default;
     }
     .iradio_flat-green.checked.disabled {
-        background-position: -154px 0;
+  background-position: -154px 0;
     }
 
 /* Retina support */
