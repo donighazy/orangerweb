@@ -3,7 +3,7 @@
 .icheckbox_futurico,
 .iradio_futurico {
     display: inline-block;
-    *display: inline;
+  *display: inline;
     vertical-align: middle;
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@
         background-position: -108px 0;
         cursor: default;
     }
-    .iradio_futurico.checked.disabled {
+  .iradio_futurico.checked.disabled {
         background-position: -126px 0;
     }
 
