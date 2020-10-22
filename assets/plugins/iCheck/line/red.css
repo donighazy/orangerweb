@@ -17,7 +17,7 @@
   cursor: pointer;
 }
     .icheckbox_line-red .icheck_line-icon,
-  .iradio_line-red .icheck_line-icon {
+.iradio_line-red .icheck_line-icon {
   position: absolute;
   top: 50%;
   left: 13px;
@@ -39,7 +39,7 @@
         background: #e56c69;
     }
   .icheckbox_line-red.checked .icheck_line-icon,
-  .iradio_line-red.checked .icheck_line-icon {
+.iradio_line-red.checked .icheck_line-icon {
             background-position: -15px 0;
         }
   .icheckbox_line-red.disabled,
@@ -51,12 +51,12 @@
   .iradio_line-red.disabled .icheck_line-icon {
             background-position: -30px 0;
         }
-  .icheckbox_line-red.checked.disabled,
+.icheckbox_line-red.checked.disabled,
   .iradio_line-red.checked.disabled {
-        background: #F7D3D2;
+  background: #F7D3D2;
     }
   .icheckbox_line-red.checked.disabled .icheck_line-icon,
-  .iradio_line-red.checked.disabled .icheck_line-icon {
+.iradio_line-red.checked.disabled .icheck_line-icon {
             background-position: -45px 0;
         }
 
@@ -69,6 +69,6 @@
     .iradio_line-red .icheck_line-icon {
         background-image: url(line@2x.png);
         -webkit-background-size: 60px 13px;
-        background-size: 60px 13px;
+    background-size: 60px 13px;
     }
 }
