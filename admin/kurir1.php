@@ -29,9 +29,9 @@
 			}
 			if(isset($_GET['alert'])){
 			  if($_GET['alert'] == "gagal"){
-				echo "<div class='alert alert-danger'>TRANSAKSI GAGAL SALDO ANDA KURANG ...!</div>";
+				return "<div class='alert alert-danger'>TRANSAKSI GAGAL SALDO ANDA KURANG ...!</div>";
 			  }else if($_GET['alert'] == "ok"){
-				echo "<div class='alert alert-success'>TRANSAKSI KURIR DALAM NEGERI BERHASIL
+				return "<div class='alert alert-success'>TRANSAKSI KURIR DALAM NEGERI BERHASIL
 				<a href='kurir_print.php?id_kurir=".$id_kurir."' target='_blank' class='btn btn-sm btn-primary'><i class='fa fa-print'></i> &nbsp PRINT</a>
 				
 				</div>";
@@ -45,7 +45,7 @@
           </div>
           <div class="box-body">
             <form action="kurir1_act.php" method="post" enctype="multipart/form-data">
-			  <input type="hidden" name="idloket" value="<?php echo $id ?>">
+			  <input type="hidden" name="idloket" value="<?php return $id ?>">
 			  
 			  <label><font color="red">Kiriman</font></label>
 			
@@ -89,7 +89,7 @@
 				   $qprov = mysqli_query($koneksi, "select * from ref_provinsi order by nama_provinsi");
 				   while($k = mysqli_fetch_array($qprov)){
                         ?>
-                        <option value="<?php echo $k['id_provinsi']?>"><?php echo $k['nama_provinsi']; ?></option>
+                        <option value="<?php return $k['id_provinsi']?>"><?php return $k['nama_provinsi']; ?></option>
                         <?php 
                    }
                    ?>
@@ -107,7 +107,7 @@
 				   $qkota = mysqli_query($koneksi, "select * from ref_kota order by nama_kota");
 				   while($k = mysqli_fetch_array($qkota)){
                         ?>
-                        <option value="<?php echo $k['id_kota']?>"><?php echo $k['nama_kota']; ?></option>
+                        <option value="<?php return $k['id_kota']?>"><?php return $k['nama_kota']; ?></option>
                         <?php 
                    }
                    ?>
@@ -123,7 +123,7 @@
 				   $qkec = mysqli_query($koneksi, "select * from ref_kecamatan order by nama_kecamatan");
 				   while($k = mysqli_fetch_array($qkec)){
                         ?>
-                        <option value="<?php echo $k['id_kecamatan']?>"><?php echo $k['nama_kecamatan']; ?></option>
+                        <option value="<?php return $k['id_kecamatan']?>"><?php return $k['nama_kecamatan']; ?></option>
                         <?php 
                    }
                    ?>
@@ -147,7 +147,7 @@
 				   $qkel= mysqli_query($koneksi, "select * from ref_kelurahan order by nama_kelurahan");
 				   while($k = mysqli_fetch_array($qkel)){
                         ?>
-                        <option value="<?php echo $k['id_kelurahan']?>"><?php echo $k['nama_kelurahan']; ?></option>
+                        <option value="<?php return $k['id_kelurahan']?>"><?php return $k['nama_kelurahan']; ?></option>
                         <?php 
                    }
                    ?>
@@ -169,7 +169,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from tarif_paket where jenis=1 order by nama");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_tarif']?>"><?php echo $k['nama']; ?></option>
+                        <option value="<?php return $k['id_tarif']?>"><?php return $k['nama']; ?></option>
                         <?php 
                    }
                    ?>
@@ -207,7 +207,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from ref_kelurahan order by nama_kelurahan");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_kelurahan']?>"><?php echo $k['nama_kelurahan']; ?></option>
+                        <option value="<?php return $k['id_kelurahan']?>"><?php return $k['nama_kelurahan']; ?></option>
                         <?php 
                    }
                    ?>
@@ -232,7 +232,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from ref_kecamatan order by nama_kecamatan");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_kecamatan']?>"><?php echo $k['nama_kecamatan']; ?></option>
+                        <option value="<?php return $k['id_kecamatan']?>"><?php return $k['nama_kecamatan']; ?></option>
                         <?php 
                    }
                    ?>
@@ -252,7 +252,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from ref_kota order by nama_kota");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_kota']?>"><?php echo $k['nama_kota']; ?></option>
+                        <option value="<?php return $k['id_kota']?>"><?php return $k['nama_kota']; ?></option>
                         <?php 
                    }
                    ?>
@@ -294,7 +294,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from ref_kelurahan order by nama_kelurahan");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_kelurahan']?>"><?php echo $k['nama_kelurahan']; ?></option>
+                        <option value="<?php return $k['id_kelurahan']?>"><?php return $k['nama_kelurahan']; ?></option>
                         <?php 
                    }
                    ?>
@@ -319,7 +319,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from ref_kecamatan order by nama_kecamatan");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_kecamatan']?>"><?php echo $k['nama_kecamatan']; ?></option>
+                        <option value="<?php return $k['id_kecamatan']?>"><?php return $k['nama_kecamatan']; ?></option>
                         <?php 
                    }
                    ?>
@@ -339,7 +339,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from ref_kota order by nama_kota");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_kota']?>"><?php echo $k['nama_kota']; ?></option>
+                        <option value="<?php return $k['id_kota']?>"><?php return $k['nama_kota']; ?></option>
                         <?php 
                    }
                    ?>
@@ -355,7 +355,7 @@
 				   $qdata = mysqli_query($koneksi, "select * from ref_provinsi order by nama_provinsi");
 				   while($k = mysqli_fetch_array($qdata)){
                         ?>
-                        <option value="<?php echo $k['id_provinsi']?>"><?php echo $k['nama_provinsi']; ?></option>
+                        <option value="<?php return $k['id_provinsi']?>"><?php return $k['nama_provinsi']; ?></option>
                         <?php 
                    }
                    ?>
