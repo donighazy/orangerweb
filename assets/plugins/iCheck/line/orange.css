@@ -2,7 +2,7 @@
 ----------------------------------- */
 .icheckbox_line-orange,
 .iradio_line-orange {
-    position: relative;
+  position: relative;
     display: block;
     margin: 0;
     padding: 5px 15px 5px 38px;
@@ -25,11 +25,11 @@
         height: 11px;
         margin: -5px 0 0 0;
         padding: 0;
-        overflow: hidden;
+  overflow: hidden;
         background: url(line.png) no-repeat;
         border: none;
     }
-    .icheckbox_line-orange.hover,
+  .icheckbox_line-orange.hover,
     .icheckbox_line-orange.checked.hover,
   .iradio_line-orange.hover {
   background: #FF9233;
@@ -45,13 +45,13 @@
     .icheckbox_line-orange.disabled,
     .iradio_line-orange.disabled {
   background: #FFD6B3;
-        cursor: default;
+  cursor: default;
     }
         .icheckbox_line-orange.disabled .icheck_line-icon,
         .iradio_line-orange.disabled .icheck_line-icon {
             background-position: -30px 0;
         }
-    .icheckbox_line-orange.checked.disabled,
+  .icheckbox_line-orange.checked.disabled,
     .iradio_line-orange.checked.disabled {
         background: #FFD6B3;
     }
