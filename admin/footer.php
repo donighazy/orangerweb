@@ -159,9 +159,9 @@
         // $total = str_replace(",", "44", number_format($pem['total_pemasukan']));
         $total = $total_uang['a'];
         if($total_uang['a'] == ""){
-          echo "0,";
+          return "0,";
         }else{
-          echo $total.",";
+          return $total.",";
         }
 
       }
@@ -184,10 +184,10 @@
         // $total = str_replace(",", "44", number_format($peng['total_pengeluaran']));
         $total = $total_uangs['b'];
         if($total_uangs['b'] == ""){
-          echo "0,";
+          return "0,";
         }else{
 
-          echo $total.",";
+          return $total.",";
         }
       }
       ?>
@@ -205,7 +205,7 @@
     $tahun = mysqli_query($koneksi,"select distinct year(transaksi_tanggal) as tahun from transaksi order by year(transaksi_tanggal) asc");
     while($t = mysqli_fetch_array($tahun)){
       ?>
-      "<?php echo $t['tahun']; ?>",
+      "<?php return $t['tahun']; ?>",
       <?php 
     }
     ?>
@@ -226,9 +226,9 @@
         $total_uang = mysqli_fetch_assoc($PLN);
         $total = $total_uang['a'];
         if($total_uang['a'] == ""){
-          echo "0,";
+          return "0,";
         }else{
-          echo $total.",";
+          return $total.",";
         }
 
       }
@@ -250,9 +250,9 @@
         $total_uangs = mysqli_fetch_assoc($PDAM);
         $total = $total_uangs['b'];
         if($total_uangs['b'] == ""){
-          echo "0,";
+          return "0,";
         }else{
-          echo $total.",";
+          return $total.",";
         }
 
       }
@@ -284,9 +284,9 @@ var barChartData3 = {
         // $total = str_replace(",", "44", number_format($pem['total_pemasukan']));
         $total = $total_uang['a'];
         if($total_uang['a'] == ""){
-          echo "0,";
+          return "0,";
         }else{
-          echo $total.",";
+          return $total.",";
         }
 
       }
@@ -309,10 +309,10 @@ var barChartData3 = {
         // $total = str_replace(",", "44", number_format($peng['total_pengeluaran']));
         $total = $total_uangs['b'];
         if($total_uangs['b'] == ""){
-          echo "0,";
+          return "0,";
         }else{
 
-          echo $total.",";
+          return $total.",";
         }
       }
       ?>
@@ -330,7 +330,7 @@ var barChartData3 = {
     $tahun = mysqli_query($koneksi,"select distinct year(transaksi_tanggal) as tahun from transaksi order by year(transaksi_tanggal) asc");
     while($t = mysqli_fetch_array($tahun)){
       ?>
-      "<?php echo $t['tahun']; ?>",
+      "<?php return $t['tahun']; ?>",
       <?php 
     }
     ?>
@@ -351,9 +351,9 @@ var barChartData3 = {
         $total_uang = mysqli_fetch_assoc($DALAMNEGERI);
         $total = $total_uang['a'];
         if($total_uang['a'] == ""){
-          echo "0,";
+          return "0,";
         }else{
-          echo $total.",";
+          return $total.",";
         }
 
       }
@@ -375,9 +375,9 @@ var barChartData3 = {
         $total_uangs = mysqli_fetch_assoc($LUARNEGERI);
         $total = $total_uangs['b'];
         if($total_uangs['b'] == ""){
-          echo "0,";
+          return "0,";
         }else{
-          echo $total.",";
+          return $total.",";
         }
 
       }
