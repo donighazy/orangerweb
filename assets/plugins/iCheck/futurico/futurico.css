@@ -20,7 +20,7 @@
     .icheckbox_futurico.checked {
         background-position: -18px 0;
     }
-    .icheckbox_futurico.disabled {
+  .icheckbox_futurico.disabled {
         background-position: -36px 0;
         cursor: default;
     }
