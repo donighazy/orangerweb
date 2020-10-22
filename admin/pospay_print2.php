@@ -35,22 +35,22 @@
  					<!--tr>
  						<th>User</th>
  						<th>:</th>
-                      	<td><?php echo $data['nohp']; ?></td>
+                      	<td><?php return $data['nohp']; ?></td>
  					</tr-->
  					<tr>
  						<th>No. Trans</th>
  						<th>:</th>
- 						<td><?php echo $notrans; ?></td>
+ 						<td><?php return $notrans; ?></td>
  					</tr>
 					<tr>
  						<th>Waktu Transaksi</th>
  						<th>:</th>
- 						<td><?php echo $data['tanggal']?></td>
+ 						<td><?php return $data['tanggal']?></td>
  					</tr>
 					<tr>
  						<th>No. Referensi</th>
  						<th>:</th>
- 						<td><?php echo $data['noref']; ?></td>
+ 						<td><?php return $data['noref']; ?></td>
  					</tr>
 					
 					<tr>
@@ -65,12 +65,12 @@
 					<tr>
  						<th>NO. TELPON</th>
  						<th>:</th>
- 						<td><?php echo $data['nohp']; ?></td>
+ 						<td><?php return $data['nohp']; ?></td>
  					</tr>
 					<tr>
  						<th>TOTAL BAYAR</th>
  						<th>:</th>
- 						<td>Rp <?php echo number_format($data['total'],0,',','.'); ?></td>
+ 						<td>Rp <?php return number_format($data['total'],0,',','.'); ?></td>
  					</tr>
  				</table>
 
