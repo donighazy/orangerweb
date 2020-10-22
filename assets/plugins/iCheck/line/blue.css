@@ -38,7 +38,7 @@
   .iradio_line-blue.checked {
   background: #2489c5;
     }
-  .icheckbox_line-blue.checked .icheck_line-icon,
+.icheckbox_line-blue.checked .icheck_line-icon,
   .iradio_line-blue.checked .icheck_line-icon {
   background-position: -15px 0;
         }
@@ -56,7 +56,7 @@
   background: #ADD7F0;
     }
   .icheckbox_line-blue.checked.disabled .icheck_line-icon,
-  .iradio_line-blue.checked.disabled .icheck_line-icon {
+.iradio_line-blue.checked.disabled .icheck_line-icon {
   background-position: -45px 0;
         }
 
