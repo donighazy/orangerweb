@@ -57,10 +57,10 @@
 @media (max-width: 767px) {
 	.pace .pace-activity {
 	  top: 15px;
-	  right: 15px;
-	  width: 14px;
+    right: 15px;
+    width: 14px;
 	  height: 14px;
-	}
+  }
 }
 
 @-webkit-keyframes pace-spinner {
