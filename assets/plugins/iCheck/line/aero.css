@@ -69,6 +69,6 @@
   .iradio_line-aero .icheck_line-icon {
     background-image: url(line@2x.png);
     -webkit-background-size: 60px 13px;
-  background-size: 60px 13px;
+    background-size: 60px 13px;
     }
 }
