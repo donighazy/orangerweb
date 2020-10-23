@@ -48,8 +48,8 @@
   cursor: default;
     }
   .icheckbox_line-red.disabled .icheck_line-icon,
-  .iradio_line-red.disabled .icheck_line-icon {
-            background-position: -30px 0;
+.iradio_line-red.disabled .icheck_line-icon {
+  background-position: -30px 0;
         }
 .icheckbox_line-red.checked.disabled,
 .iradio_line-red.checked.disabled {
@@ -65,9 +65,9 @@
   only screen and (-moz-min-device-pixel-ratio: 1.5),
   only screen and (-o-min-device-pixel-ratio: 3/2),
   only screen and (min-device-pixel-ratio: 1.5) {
-    .icheckbox_line-red .icheck_line-icon,
+.icheckbox_line-red .icheck_line-icon,
 .iradio_line-red .icheck_line-icon {
-        background-image: url(line@2x.png);
+    background-image: url(line@2x.png);
     -webkit-background-size: 60px 13px;
     background-size: 60px 13px;
     }
