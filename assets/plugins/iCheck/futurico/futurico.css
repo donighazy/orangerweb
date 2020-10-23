@@ -17,10 +17,10 @@
 .icheckbox_futurico {
   background-position: 0 0;
 }
-  .icheckbox_futurico.checked {
+.icheckbox_futurico.checked {
   background-position: -18px 0;
 }
-  .icheckbox_futurico.disabled {
+.icheckbox_futurico.disabled {
   background-position: -36px 0;
   cursor: default;
     }
@@ -34,11 +34,11 @@
   .iradio_futurico.checked {
   background-position: -90px 0;
     }
-  .iradio_futurico.disabled {
+.iradio_futurico.disabled {
   background-position: -108px 0;
   cursor: default;
     }
-  .iradio_futurico.checked.disabled {
+.iradio_futurico.checked.disabled {
   background-position: -126px 0;
     }
 
@@ -48,8 +48,8 @@
   only screen and (-o-min-device-pixel-ratio: 3/2),
   only screen and (min-device-pixel-ratio: 1.5) {
   .icheckbox_futurico,
-    .iradio_futurico {
-        background-image: url(futurico@2x.png);
+  .iradio_futurico {
+    background-image: url(futurico@2x.png);
     -webkit-background-size: 144px 19px;
     background-size: 144px 19px;
     }
