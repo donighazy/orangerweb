@@ -13,7 +13,7 @@
 }
 
 .jvectormap-zoomin, .jvectormap-zoomout {
-    position: absolute;
+  position: absolute;
   top: 100%;
   margin-top: -25px;
   -webkit-border-radius: 2px;
