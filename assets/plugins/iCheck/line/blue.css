@@ -2,7 +2,7 @@
 ----------------------------------- */
 .icheckbox_line-blue,
 .iradio_line-blue {
-    position: relative;
+  position: relative;
   display: block;
   margin: 0;
   padding: 5px 15px 5px 38px;
@@ -16,8 +16,8 @@
   border-radius: 3px;
   cursor: pointer;
 }
-  .icheckbox_line-blue .icheck_line-icon,
-  .iradio_line-blue .icheck_line-icon {
+.icheckbox_line-blue .icheck_line-icon,
+.iradio_line-blue .icheck_line-icon {
   position: absolute;
   top: 50%;
   left: 13px;
@@ -67,8 +67,8 @@
   only screen and (min-device-pixel-ratio: 1.5) {
     .icheckbox_line-blue .icheck_line-icon,
     .iradio_line-blue .icheck_line-icon {
-        background-image: url(line@2x.png);
-        -webkit-background-size: 60px 13px;
+    background-image: url(line@2x.png);
+    -webkit-background-size: 60px 13px;
         background-size: 60px 13px;
     }
 }
