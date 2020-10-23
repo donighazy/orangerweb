@@ -28,7 +28,7 @@
   overflow: hidden;
   background: url(line.png) no-repeat;
   border: none;
-    }
+}
 .icheckbox_line-red.hover,
 .icheckbox_line-red.checked.hover,
 .iradio_line-red.hover {
@@ -47,7 +47,7 @@
   background: #F7D3D2;
   cursor: default;
     }
-  .icheckbox_line-red.disabled .icheck_line-icon,
+.icheckbox_line-red.disabled .icheck_line-icon,
 .iradio_line-red.disabled .icheck_line-icon {
   background-position: -30px 0;
         }
